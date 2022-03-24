@@ -16,6 +16,19 @@
     object-fit: cover;
 }
 
+.card {
+    position: relative;
+    display: flex;
+    margin-top: -180px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
 .img-circle {
     border-radius: 100%;
     width: 150px;
@@ -27,11 +40,18 @@
     margin-left: 25px;
 }
 
-.profile-info h2 {
+.profile-info h3 {
+    font-size: 25px;
     margin-bottom: 0;
 }
 
 .profile-info p {
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.profile-info span {
+    font-size: small;
     margin-bottom: 0;
 }
 
@@ -51,8 +71,69 @@
     margin-right: 5px;
     font-size: 18px;
     color: #000;
+    margin-bottom: 25px;
+}
+
+.education-section {
+    margin-bottom: 25px;
 }
 
 .education-section p {
+    margin-bottom: 5px;
+}
+
+.languange-section {
+    margin-bottom: 25px;
+}
+
+.experience-section p {
+    margin-top: 0;
     margin-bottom: 0;
 }
+
+.hobby {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.hobby h2 {
+	font-weight: bold;
+	font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hobby-photo {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.hobby-photo .img-responsive {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.text-center {
+    margin-top: 10px;
+    text-align: center!important;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 700px) { 
+    .card { 
+        width: 250%; 
+    }
+    .img-circle {
+        margin-top: 5px;
+        margin-left: 35px;
+    } 
+    .profile-info { 
+        margin-top: 170px; 
+        margin-left: -145px; 
+    }   
+  }
+
+  @media screen and (max-width: 700px) { 
+    
+  }
